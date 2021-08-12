@@ -9,18 +9,19 @@ namespace UserRegistration
     {
         public void UserInput()
         {
-            Console.WriteLine("\n First name : Starts with Capital alphabet and has minimum 3 characters..");
+            Console.WriteLine("\n Last name : Starts with Capital alphabet and has minimum 3 characters..");
             const string Regex_Name = "^[A-Z]{1}[A-Za-z]{2,}";
 
-            Console.Write(" Enter First name : ");
-            string firstName = Console.ReadLine();
-            if (Regex.IsMatch(firstName, Regex_Name) == true)
+            Console.Write(" Enter Last name : ");
+            //string firstName = Console.ReadLine();
+            string lastName = Console.ReadLine();
+            if (Regex.IsMatch(lastName, Regex_Name) == true)
             {
-                Console.WriteLine(" First name - Valid");
+                Console.WriteLine(" Last name - Valid");
             }
             else
             {
-                Console.WriteLine(" First name - Not valid");
+                Console.WriteLine(" Last name - Not valid");
                 UserInput();
             }
         }
