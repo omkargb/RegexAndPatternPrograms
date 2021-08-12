@@ -9,20 +9,34 @@ namespace UserRegistration
     {
         public void UserInput()
         {
-            const string Regex_MobileNum = "^[1-9]{1,2}[ ][1-9]{1}[0-9]{9}$";
-            Console.Write("\n Enter your mobile number (CountryCode 10DigitNumber) : ");
-            string mobile = Console.ReadLine();
+            const string Regex_Password = "^[a-zA-Z0-9_!-+@#$]{8,}$";
+            Console.WriteLine("\n Password Rule --> 1]Minimum 8 Characters");
+            Console.Write("\n Enter password : ");
+            string password = Console.ReadLine();
 
-            if (Regex.IsMatch(mobile, Regex_MobileNum) == true)
+            if (Regex.IsMatch(password, Regex_Password) == true)
             {
-                Console.WriteLine(" Mobile number is Valid. ");
+                Console.WriteLine(" Password is in correct format. ");
             }
             else
             {
-                Console.WriteLine(" Mobile number is Not Valid. ");
+                Console.WriteLine(" Password is Not in correct format. ");
                 UserInput();
             }
 
+            //const string Regex_MobileNum = "^[1-9]{1,2}[ ][1-9]{1}[0-9]{9}$";
+            //Console.Write("\n Enter your mobile number (CountryCode 10DigitNumber) : ");
+            //string mobile = Console.ReadLine();
+
+            //if (Regex.IsMatch(mobile, Regex_MobileNum) == true)
+            //{
+            //    Console.WriteLine(" Mobile number is Valid. ");
+            //}
+            //else
+            //{
+            //    Console.WriteLine(" Mobile number is Not Valid. ");
+            //    UserInput();
+            //}
             //const string Regex_EmailId = "^[A-Za-z0-9]+([.+-_][A-Za-z0-9]+)*[@][a-zA-Z0-9]+[.][A-Za-z]+([.][A-Za-z]+)?$";
 
             //Console.Write(" Enter your email-Id : ");
