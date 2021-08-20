@@ -12,18 +12,18 @@ namespace UserRegistration
 
             const string Regex_EmailId = "^[A-Za-z0-9]+([.+-_][A-Za-z0-9]+)*(([@][a-zA-Z0-9]{1,}){1})+([.][A-Za-z]{2,3})+(([.][A-Za-z]{2,3}))?$";
 
-            string[] inputMails = { "abc@yahoo.com", 
-            "abc-100@yahoo.com", 
-            "abc.100@yahoo.com", 
+            string[] inputMails = { "abc@yahoo.com",
+            "abc-100@yahoo.com",
+            "abc.100@yahoo.com",
             "abc111@abc.com",
             "abc-100@abc.net",
-            "abc.100@abc.com.au", 
-            "abc@1.com", 
-            "abc@gmail.com.com", 
+            "abc.100@abc.com.au",
+            "abc@1.com",
+            "abc@gmail.com.com",
             "abc+100@gmail.com" ,
             "abc",
             "abc@.com.my",
-            "abc123@gmail.a", 
+            "abc123@gmail.a",
             "abc123@.com" ,
             "abc123@.com.com",
             ".abc@abc.com",
@@ -101,5 +101,5 @@ namespace UserRegistration
             //    UserInput();
             //}
         }
-}
+    }
 }
