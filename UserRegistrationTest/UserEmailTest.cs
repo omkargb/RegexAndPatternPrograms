@@ -3,9 +3,10 @@ using UserRegistration;
 
 namespace UserRegistrationTest
 {
-    public class UserEmailTest
+    public class UserMultipleEmailTest
     {
-        ValidationTest validate = new ValidationTest();
+        //ValidationTest validate = new ValidationTest();
+        InputValidation validate = new InputValidation();
 
         [SetUp]
         public void Setup()
